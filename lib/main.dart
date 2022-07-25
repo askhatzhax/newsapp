@@ -25,7 +25,7 @@ class _HomePageState extends State<HomePage>
     with SingleTickerProviderStateMixin {
       List<ListItem> listTiles=[
         ListItem(
-          "https://icdn.football-espana.net/wp-content/uploads/2022/03/Robert-Lewandowski-1.jpeg",
+          "https://icdn.football-espana.net/wp-content/uploads/2022/03/Robert-Lewanssdowski-1.jpeg",
             "Левандовский перешел в лучший клуб мира",
             "Fabrizio Romano",
             "22.07.2022",
