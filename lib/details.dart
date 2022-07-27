@@ -13,7 +13,7 @@ class DetailsScreen extends StatelessWidget {
   Widget build(BuildContext context){
     return Container(
       child: Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.yellow[50],
         body: Stack(
           children: [
             SingleChildScrollView(
@@ -41,7 +41,7 @@ class DetailsScreen extends StatelessWidget {
                             height: 10.0,
                           ),
                           Row(children: [
-                            Icon(Icons.person),
+                            Icon(Icons.person,color:Colors.indigo ,),
                             Text(
                               item.author,
                               style: TextStyle(
@@ -52,7 +52,7 @@ class DetailsScreen extends StatelessWidget {
                             SizedBox(
                               width: 10.0,
                             ),
-                            Icon(Icons.date_range),
+                            Icon(Icons.date_range,color:Colors.indigo ,),
                             Text(
                               item.date,
                               style: TextStyle(
@@ -84,7 +84,7 @@ class DetailsScreen extends StatelessWidget {
                 } ,
                 icon: Icon(
                   Icons.arrow_back,
-                  color: Colors.white,
+                  color: Colors.cyan,
                 ),
               ),
             )

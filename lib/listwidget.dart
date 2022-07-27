@@ -2,13 +2,19 @@ import 'package:flutter/material.dart';
 import 'shared/listitem.dart';
 Widget listWidget(ListItem item){
   return Card(
-    elevation: 2.0,
-    margin: EdgeInsets.only(bottom: 20.0),
+    elevation: 1.0,
+      color: Colors.yellow[50],
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(Radius.circular(10))
+      ),
+    margin: EdgeInsets.only(bottom: 10.0),
     child: Padding(
+
         padding: EdgeInsets.all(8.0),
         child: Row(
           children: [
             Hero(
+
               tag: '${item.newsTitle}',
               child: Container(
                 width: 80.0,
@@ -34,7 +40,7 @@ Widget listWidget(ListItem item){
                     SizedBox(height: 5.0),
                     Row(
                       children: [
-                        Icon(Icons.person),
+                        Icon(Icons.person,color:Colors.indigo ,),
                         Text(
                           item.author,
                           style: TextStyle(
@@ -43,7 +49,7 @@ Widget listWidget(ListItem item){
                           ),
                         ),
                         SizedBox(width: 10.0),
-                        Icon(Icons.date_range),
+                        Icon(Icons.date_range,color:Colors.indigo ,),
                         Text(
                           item.date,
                           style: TextStyle(
