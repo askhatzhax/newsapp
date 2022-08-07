@@ -32,13 +32,13 @@ class _HomePageState extends State<HomePage>
             "22.07.2022",
         ),
         ListItem(
-          "https://sun2.dataix-kz-akkol.userapi.com/impf/kouh7t7QItBj5-mDRaXQ2sP7HgShmiPEnBiV9w/drERin3yt5w.jpg?size=1600x1115&quality=95&sign=8761673c210e26f8fb2abbb7094d1541&type=album",
+          "https://www.meme-arsenal.com/memes/4d039db6a29830c2ba7d069aaba1305a.jpg",
           "Никто не хочет подписывать Роналду, так как он с Абайской области",
           "adil kabluk",
           "21.07.2022",
         ),
         ListItem(
-          "https://sun1.dataix-kz-akkol.userapi.com/impg/u2543KdsvaFwaEc0jOzt0pmqydRu4ovGIyAkNw/OJwi-h54JfM.jpg?size=1920x1279&quality=96&sign=310d8944165a229ebe2b21e52043c98b&type=album",
+          "https://img.championat.com/c/1350x759/news/big/o/l/anchelotti-vyskazalsya-o-fizicheskoj-gotovnosti-benzema_16589749211149965340.jpg",
           "К сожалению бревно по имени Бензема скорее всего получить зм 2022г.",
           "Уйурский гуру",
           "20.07.2022",
@@ -86,15 +86,44 @@ class _HomePageState extends State<HomePage>
 
         toolbarHeight: 90.0,
         leading: IconButton(
-          onPressed: () {},
+          onPressed: () {
+          },
             icon: Icon(
               Icons.menu,
               color: Colors.cyan,
             )
         ),
+          actions: <Widget> [
+            PopupMenuButton(
+              icon: Icon(Icons.share,
+                color: Colors.cyan,),
+              itemBuilder: (context) => [
+                PopupMenuItem(
+                  value: 1,
+                  child: Text("WhatsApp"),
+
+                ),
+                PopupMenuItem(
+                  value: 2,
+                  child: Text("Instagram"),
+                ),
+                PopupMenuItem(
+                  value: 3,
+                  child: Text("Telegram"),
+                ),
+              ],
+            ),
+            IconButton(
+              icon: Icon(Icons.search_sharp,
+                color: Colors.cyan,),
+              onPressed: () => {
+                print("Click to search")
+              },
+            ),
+          ],
         backgroundColor: Colors.yellow[50],
         centerTitle: true,
-        title: Text("Newsapp",style: TextStyle(
+        title: Text("⚡ Newsapp",style: TextStyle(
           color: Colors.amber,
         ),
         ),
